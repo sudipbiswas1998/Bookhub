@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sudip/AndroidStudioProjects/Training/Bookhub/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Sudip/AndroidStudioProjects/Training/Bookhub/app/src/main/res/layout/recycler_dashboard_single_row.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22395833333333334" />
         <entry key="app/src/main/res/layout/fragment_about_app.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.23802083333333332" />
@@ -13,7 +15,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

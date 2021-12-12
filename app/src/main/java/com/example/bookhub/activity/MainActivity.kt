@@ -1,16 +1,18 @@
-package com.example.bookhub
+package com.example.bookhub.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import android.view.MenuItem
 import android.widget.FrameLayout
-import android.widget.Toast
-import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.bookhub.R
+import com.example.bookhub.fragment.AboutAppFragment
+import com.example.bookhub.fragment.DashboardFragment
+import com.example.bookhub.fragment.FavouriteFragment
+import com.example.bookhub.fragment.ProfileFragment
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
