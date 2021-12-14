@@ -1,22 +1,26 @@
 package com.example.bookhub.fragment
 
+import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bookhub.R
 import com.example.bookhub.adapter.DashboardRecyclerAdapter
 import com.example.bookhub.model.Book
+import com.example.bookhub.util.ConnectionManager
 
 class DashboardFragment : Fragment() {
 
     lateinit var recyclerDashboard: RecyclerView
     lateinit var layoutManager: RecyclerView.LayoutManager
+    lateinit var btnCheckInternet: Button
 
     /*val bookList = arrayListOf(
         "ABSALOM, ABSALOM!",
@@ -52,6 +56,37 @@ class DashboardFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_dashboard, container, false)
+
+        btnCheckInternet = view.findViewById(R.id.btnCheckInternet)
+
+        btnCheckInternet.setOnClickListener {
+            if(ConnectionManager().checkConnectivity(activity as Context)){
+                val dialog = AlertDialog.Builder(activity as Context)
+                dialog.setTitle("Success")
+                dialog.setMessage("Internet is connected")
+                dialog.setPositiveButton("Ok"){ text, listener->
+
+                }
+                dialog.setNegativeButton("Cancel"){text, listener->
+
+                }
+                dialog.create()
+                dialog.show()
+            }
+            else{
+                val dialog = AlertDialog.Builder(activity as Context)
+                dialog.setTitle("Error")
+                dialog.setMessage("Internet is not connected")
+                dialog.setPositiveButton("Ok"){ text, listener->
+
+                }
+                dialog.setNegativeButton("Cancel"){text, listener->
+
+                }
+                dialog.create()
+                dialog.show()
+            }
+        }
 
         recyclerDashboard = view.findViewById(R.id.recyclerDashboard)
 

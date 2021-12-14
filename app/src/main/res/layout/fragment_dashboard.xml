@@ -20,4 +20,11 @@
         android:layout_below="@+id/txtDashboard"
         android:padding="5dp"
         android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/btnCheckInternet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:text="Check Internet"/>
 </RelativeLayout>
