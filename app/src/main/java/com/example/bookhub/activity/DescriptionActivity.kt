@@ -4,6 +4,7 @@ import android.app.DownloadManager
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.widget.Toolbar
@@ -68,13 +69,14 @@ class DescriptionActivity : AppCompatActivity() {
         val url = "http://13.235.250.119/v1/book/get_book/"
 
         val jsonParams = JSONObject()
-        jsonParams.put("book_Id", bookId)
+        jsonParams.put("book_id", bookId)
 
         println(jsonParams)
 
         val jsonObjectRequest =
             object : JsonObjectRequest(Method.POST, url, jsonParams, Response.Listener {
                 try {
+                    println("Response $it")
                     val success = it.getBoolean("success")
                     println("success is $success")
                     if (success) {
