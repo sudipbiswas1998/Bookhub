@@ -89,12 +89,12 @@ class DashboardFragment : Fragment() {
 
                                 recyclerDashboard.layoutManager = layoutManager
 
-                             /*   recyclerDashboard.addItemDecoration(
-                                    DividerItemDecoration(
-                                        recyclerDashboard.context,
-                                        (layoutManager as LinearLayoutManager).orientation
-                                    )
-                                )*/
+                                /*   recyclerDashboard.addItemDecoration(
+                                       DividerItemDecoration(
+                                           recyclerDashboard.context,
+                                           (layoutManager as LinearLayoutManager).orientation
+                                       )
+                                   )*/
                             }
 
                         } else {
@@ -113,11 +113,13 @@ class DashboardFragment : Fragment() {
                     }
 
                 }, Response.ErrorListener {
-                    Toast.makeText(
-                        activity as Context,
-                        "Volley error occurred!!!",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    if (activity != null) {
+                        Toast.makeText(
+                            activity as Context,
+                            "Volley error occurred!!!",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
 
                 }) {
                     override fun getHeaders(): MutableMap<String, String> {
