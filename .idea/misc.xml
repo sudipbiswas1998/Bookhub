@@ -2,6 +2,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sudip/AndroidStudioProjects/Training/Bookhub/app/src/main/res/layout/activity_description.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Sudip/AndroidStudioProjects/Training/Bookhub/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sudip/AndroidStudioProjects/Training/Bookhub/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sudip/AndroidStudioProjects/Training/Bookhub/app/src/main/res/layout/recycler_dashboard_single_row.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22395833333333334" />
